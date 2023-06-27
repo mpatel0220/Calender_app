@@ -3,10 +3,8 @@ package com.calender.model;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -36,6 +34,7 @@ public class MyUser {
 	private String name;
 	private String password;
 	private String role="user";
+	
 	public MyUser(String userName, String name, String password) {
 		super();
 		this.userName = userName;
